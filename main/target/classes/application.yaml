@@ -1,0 +1,21 @@
+# mybatis
+mybatis:
+  mapper-locations: classpath:com/springboot/mybatis/mapper/*.xml
+
+# hikari连接池
+spring:
+  datasource:
+    username: mingyu
+    password: mingyu123
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://123.207.62.111:3305/cabinet?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      minimum-idle: 5
+      pool-name: myHikari
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
