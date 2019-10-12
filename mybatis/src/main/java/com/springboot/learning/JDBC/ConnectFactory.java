@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * @ClassName:JdbcTest
  * @Description: TODO
  */
-public class ConnectFactory {
+public class    ConnectFactory {
 
     private static String JDBC_URL = "";
     private static String USERNAME = "";
